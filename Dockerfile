@@ -1,5 +1,8 @@
 FROM gcr.io/cloudshell-images/cloudshell:latest
 RUN apt-get -y install neovim
+RUN apt-get -y install fish
+RUN chsh -s /bin/fish
+CMD fish
 
 # Add your content here
 
